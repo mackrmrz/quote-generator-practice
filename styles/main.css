@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/floating-cogs.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Mate SC', serif;
+  font-weight: 700;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.card {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: rgba(225, 225, 225, 0.9);
+  box-shadow: 0 10px 10px 10px rgb(0 0 0 / 20%);
+  font-size: 2em;
+}
+
+.card .quote-container {
+	font-size: 2.75rem;
+}
+
+
+.long-quote {
+  background: cadetblue;
+  font-size: 2.3rem;
+}
+
+.card .button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .button-container button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  background: #333;
+  color: #fff;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgb(121, 121, 121, 0.65);
+}
+
+.card .button-container button:hover {
+  filter: brightness(110%);
+}
+
+.card .button-container button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(225, 225, 225, 0.65);
+}
+
+.card .button-container .twitter-button:hover {
+  color: #38a1f3;
+}
+
+.card .button-container .twitter-button .fa-twitter {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.card {
+		margin: auto 10px;
+	}
+	.card .header .quote-container{
+		font-size: 2.5rem;
+		padding: 20px;
+	}
+
+  /* .long-quote {
+    background: cadetblue;
+    font-size: 2.3rem;
+  } */
+}
